@@ -1,0 +1,618 @@
+
+
+/* responsive tablet navbar start */
+@media only screen and (min-width: 1400px) {
+    .overlay {
+        display: none !important;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+    .nav-container {
+        width: 100%;
+        margin: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .nav-links {
+        position: fixed !important;
+        top: 0;
+        height: 100vh !important;
+        z-index: 9999 !important;
+        
+    }
+    .nav-links-effect-container{
+        width: 100%;
+    }
+    .download-center{
+        width: 100%;
+        align-items:start;
+        justify-content: start;
+        
+    }
+    .download-cv {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+        border-radius: 5px;
+        background:transparent;
+        justify-content: start;
+        background: #ffffff10;   
+    }
+
+    .nav-container {
+        width: 100%;
+        margin: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+
+    .name-bar {
+        font-size: 22px;
+    }
+
+    .job-bar {
+        font-size: 16px;
+    }
+
+    .menu-btn {
+        display: flex;
+        background: transparent;
+        outline: 0;
+        border: 0;
+        margin-right: 10px;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    .nav-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 30px 0;
+        font-size: 18px;
+        background: #ffffff20;
+        border-radius: 5px;
+        border: 2px solid #ffffff20;
+        box-shadow: -8px 8px 0px #ffffff20;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* background: #1f142b;
+        border: 4px solid #3a2751;
+        padding: 20px;
+        margin: 35px auto;
+        border-radius: 5px;
+        box-shadow: -15px 15px 1px #2c1d3d; */
+
+    .nav-menu-header>.name-bar {
+        font-size: 18px;
+    }
+
+    .nav-menu-header>.name-bar>span {
+        font-size: 16px;
+    }
+
+
+
+
+    .nav-links {
+        display: none !important;
+        position: absolute;
+        top: 0;
+        left: -400px;
+        background: #000000c7;
+        backdrop-filter: blur(10px);
+        opacity: 0;
+        transform: scale(0.50) !important;
+        transform-origin: top left;
+        border-right: 1px solid #ffffff20;
+        flex-direction: column;
+        width: 350px;
+        height: 100%;
+        overflow: auto;
+        overflow-x: hidden;
+        align-items: flex-start;
+        padding: 10px;
+        transition: .5s all;
+       
+        z-index: 999;
+    }
+
+    .active-nav {
+        position: absolute;
+        display: flex !important;
+    }
+
+    .anim-navs {
+        transform: scale(1) !important;
+        opacity: 1 !important;
+        top: 0;
+        left: 0px;
+    }
+
+
+    .nav-link {
+        transition: .3s ease all;
+        text-align: left;
+        width: 300px;
+        padding: 20px 10px;
+        margin: 10px 0;
+        border-radius: 5px 0 0 5px;
+        background: linear-gradient(320deg, transparent 20%, #ffffff20 50%);
+        transition: 3s ease opacity;
+    }
+
+    .nav-link:hover {
+        opacity: 1;
+        color: #fff;
+        background: linear-gradient(320deg, transparent 20%, #ffffff20 50%);
+    }
+
+    .nav-links-effect-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .link-numbers {
+        display: none;
+    }
+
+    .dot-link-effect {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .card-container{
+        flex-wrap: wrap;
+    }
+    .m-card{
+        width: 300px;
+    }
+    .content-header {
+        font-size: 38px;
+    }
+
+    .content-title {
+        font-size: 32px;
+    }
+
+    .footer a {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 4rem;
+    }
+
+    .main-header {
+        font-size: 26px;
+        text-align: center;
+    }
+    .main-buttons{
+        justify-content: center;
+    }
+
+    .big-header {
+
+        font-size: 28px;
+    }
+
+
+    .header {
+        font-size: 28px;
+    }
+
+    .content-alt {
+        font-size: 22px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 1050px) {
+        .w100 {
+            width: 65%;
+        }
+    
+        .card-mind {
+            width: calc(50% - 10px);
+        }
+}
+@media only screen and (max-width: 880px) {
+    .bling {
+            flex-direction: column-reverse;
+            justify-content: start;
+            align-items: start;
+        }
+    
+        .bling span {
+            margin: 15px 0;
+        }
+    .four-cards-t {
+        flex-wrap: wrap;
+
+    }
+        .w100 {
+            width: 65%;
+        }
+        .card-mind {
+            width: calc(50% - 10px);
+            
+        }
+    .manifesto-img{
+        width: 100%;
+        margin: 0;
+    }
+
+    
+    .four-cards{
+        /* flex-direction: column; */
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .tokens-cards-main{
+        flex-direction: column-reverse;
+    }
+    .tokens-text,.tokens-img{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .header-team,.header-manifesto{
+        font-size: 36px;
+    }
+    .card-token{
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        padding: 10px;
+    }
+    .t-card-text{
+        font-size:16px;
+    }
+    .t-card-header{
+        font-size: 22px;
+    }
+    .t-card-img{
+        width: 110px;
+        height: 110px;
+    }
+    .header-tokens{
+        font-size: 26px;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .gold-border{
+        height: 5px;
+    }
+    .main-header{
+        font-size: 16px !important;
+    }
+    .content-header {
+        font-size: 32px;
+    }
+
+    .content-title {
+        font-size: 26px;
+    }
+
+    .footer a {
+        font-size: 16px;
+    }
+
+    .main-text {
+        font-size: 4rem;
+    }
+
+    .main-header {
+        font-size: 22px;
+    }
+
+    .big-header {
+
+        font-size: 28px;
+    }
+
+
+    .header {
+        font-size: 22px;
+    }
+
+    .content-alt {
+        font-size: 18px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 640px) {
+    .four-cards-t {
+            flex-wrap: wrap;
+        }
+    
+        .w100 {
+            width: 65%;
+        }
+    
+        .card-mind {
+            width: calc(100% - 10px);
+            height: 180px;
+            margin-bottom: 30px;
+        }
+       
+        .mind-card-img{
+            width: 90px;
+        }
+        .numb{
+            font-size: 52px;
+        }
+    .m-card {
+            width: 100%;
+        }
+   
+    .four-cards {
+            /* flex-direction: column; */
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+    
+        .tokens-cards-main {
+            flex-direction: column-reverse;
+        }
+    
+        .tokens-text,
+        .tokens-img {
+            width: 100%;
+            font-size: 20px;
+        }
+    
+        .header-team,
+        .header-manifesto {
+            font-size: 36px;
+        }
+    
+        .card-token {
+            width: calc(50% - 10px);
+            margin-right: 10px;
+            padding: 10px;
+        }
+    
+        .t-card-text {
+            font-size: 16px;
+        }
+    
+        .t-card-header {
+            font-size: 22px;
+        }
+    
+        .t-card-img {
+            width: 110px;
+            height: 110px;
+        }
+    
+        .header-tokens {
+            font-size: 22px;
+           
+        }
+
+    .content-header {
+            font-size: 28px;
+        }
+    
+        .content-title {
+            font-size: 22px;
+        }
+    .container{
+        padding: 10px;
+    }
+
+    .nav-container {
+        padding: 12px 0;
+
+    }
+
+}
+
+@media only screen and (max-width:550px) {
+    .manifesto-text{
+        font-size: 18px;
+    }
+    
+    .four-cards {
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+    
+        .tokens-cards-main {
+            flex-direction: column-reverse;
+        }
+    
+        .tokens-text,
+        .tokens-img {
+            width: 100%;
+            font-size: 18px;
+        }
+    
+        .header-team,
+        .header-manifesto {
+            font-size: 36px;
+           
+        }
+    
+        .card-token {
+            width: calc(100%);
+            margin-right: 10px;
+            padding: 10px;
+        }
+    
+        .t-card-text {
+            font-size: 16px;
+        }
+    
+        .t-card-header {
+            font-size: 22px;
+        }
+    
+        .t-card-img {
+            width: 110px;
+            height: 110px;
+        }
+    
+        .header-tokens {
+            font-size: 20px;
+            text-align: center;
+        }
+}
+@media only screen and (max-width:455px) {
+
+    
+   
+   
+
+    .nav-links {
+        width: 300px;
+
+    }
+
+    .nav-link {
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+
+    .main-buttons {
+            justify-content: center;
+            flex-direction: column;
+        }
+    .main-buttons a{
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+        border-radius: 5px;
+        margin-right: 0;
+    }    
+
+    .nav-link {
+        width: 250px;
+    }
+
+    .nav-links {
+        width: 300px;
+    }
+
+    .nav-menu-header {
+        padding: 0;
+
+    }
+
+
+
+
+    .nav-menu-header>.name-bar {
+        font-size: 16px;
+        padding: 13px;
+    }
+
+    .nav-menu-header>.name-bar>span {
+        font-size: 13px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+   
+
+    .name-bar {
+        font-size: 16px;
+    }
+
+    .job-bar,
+    .type-bar {
+        font-size: 14px;
+    }
+
+    .menu-btn {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width:340px) {
+
+    .profile-img{
+        width: 200px;
+    }
+
+    .nav-links {
+
+        width: 250px;
+
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+    
+
+    .name-bar {
+        font-size: 14px;
+    }
+
+    .job-bar,
+    .type-bar {
+        font-size: 12px;
+    }
+
+    .menu-btn {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        padding: 5px;
+        width: 200px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 10px;
+        width: 150px;
+    }
+
+    .download-cv {
+        height: 40px;
+    }
+}
+
+/* responsive tablet navbar end */
+
