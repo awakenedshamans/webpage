@@ -51,7 +51,7 @@ nav{
 }
 .bg-dark-bg{
     background-color: #000000;
-    background: url(bg-dar-bg.jpg),linear-gradient(to bottom, #ffffff, #fffbef);
+    background: url(bg-dar-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
