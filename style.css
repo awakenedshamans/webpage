@@ -31,22 +31,26 @@ nav{
 }
 
 .bg-dark {
+    background-color: #000000;
     background: linear-gradient(to top, #000000, #252525) !important;
     color: #fff !important;
 }
 .bg-draw{
+    background-color: #fffbef;
     background: url(bg.png),linear-gradient(to bottom, #ffffff, #fffbef);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .bg-light{
+    background-color: #fffbef;
     background: url(bg.png),linear-gradient(to bottom, #ffffff, #fffbef);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .bg-dark-bg{
+    background-color: #000000;
     background: url(bg-dar-bg.jpg),linear-gradient(to bottom, #ffffff, #fffbef);
     background-size: cover;
     background-repeat: no-repeat;
@@ -654,6 +658,7 @@ i {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    max-width: 1300px !important;
 }
 
 .text-flex{
@@ -806,6 +811,7 @@ i {
     color: #353535;
     font-weight: 800;
     font-size: 22px;
+    
 }
 .header-tokens span {
     color: #00000050;
@@ -1163,7 +1169,13 @@ button{
     display: flex;
     align-items: center;
     justify-content: start;
+    width: 100%;
+    
+}
+.d-flex{
+    display: flex;
     border-bottom: 5px solid #00000010;
+    padding: 5px 0;
 }
 .bling span{
     display: flex;
