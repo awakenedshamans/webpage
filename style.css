@@ -1003,12 +1003,12 @@ i {
     height: 260px;
     border-radius: 0px;
     margin: 3px 0;
-    background: #EBE7DF;
+    background: #1a1a1a;
     border: 1px solid transparent;
     width: 30%;
     overflow: hidden;
     text-decoration: none;
-    color: #353535;
+    color: #f1f1f1;
 }
 .manifesto-text-container {
     padding-right: 20px;
@@ -1020,7 +1020,7 @@ i {
     width:calc(40% - 20px);
 }
 .mind-bg{
-    background: #E8505B;
+    background: #3b1013;
 }
 .opacity1{
     opacity: 1 !important;
@@ -1034,7 +1034,7 @@ i {
 .numb{
     
     font-weight: 900;
-    color: #00000025;
+    color: #ffffff55;
     font-size: 64px;
 }
 .container-mind{
@@ -1123,20 +1123,25 @@ i {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #EBE7DF;
+    background: #1a1a1a;
     padding: 20px;
     overflow: auto;
     z-index: 2;
     transition: .3s ease all;
+    
 }
 .mind-alt{
     max-width: 100%;
-    
+}
+.mind-alt div{
+    color: #f1f1f1;
 }
 button{
     cursor: pointer;
 }
-
+.d-flex{
+    color: #95855C !important;
+}
 .xmark{
     position: absolute;
     top: -10px;
