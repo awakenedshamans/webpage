@@ -29,7 +29,14 @@ nav{
     width: 100%;
     z-index: 999;
 }
-
+.container-f{
+    max-width: 1300px;
+    margin: auto;
+}
+.container-d{
+    max-width: 1700px;
+    margin: auto;
+}
 .bg-dark {
     background-color: #000000;
     background: linear-gradient(to top, #000000, #252525) !important;
@@ -806,11 +813,11 @@ i {
     border-bottom: 5px solid #ffffff10;
 }
 .header-tokens{
-    text-align: center;
+    text-align: left;
     padding: 20px 0;
     color: #353535;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 32px;
     
 }
 .header-tokens span {
@@ -911,15 +918,25 @@ i {
 }
 .manifesto-text{
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    width: 100;
+    flex-wrap: wrap;
+    width: 100%;
     color: #fff;
     font-weight: 300;
     line-height: 35px;
     font-size: 22px;
 }
-
+.floor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+ 
+    
+}
 
 .prev-link{
     padding: 10px;
@@ -943,13 +960,21 @@ i {
     color:#fff;
 }
 .tokens-img{
+
     width: 50%;
-    height: 350px;
-    border-radius: 5px;
     
+    border-radius: 5px;
+    font-size: 22px;
+    text-align: center;
     border: 1px solid #00000010;
     backdrop-filter: blur(5px);
     background: #00000010;
+}
+.tokens-img .tokens-text{
+    display: flex;
+    align-items: center !important;
+    height: 100%;
+    width: 100%;
 }
 .manifesto-img{
     width: 500px;
@@ -961,9 +986,17 @@ i {
     margin-left: 25px;
 }
 .manifesto-text-container{
-    max-width: 100%;
+    width: 50%;
+    margin: 20px 0;
+
+}
+.manifesto-text-container2{
+    width: 50%;
+    text-align: center;
+
     margin: 20px 0;
 }
+
 .four-cards{
     display: flex;
     gap: 20px;
@@ -1130,6 +1163,7 @@ i {
     transition: .3s ease all;
     
 }
+
 .mind-alt{
     max-width: 100%;
 }
@@ -1138,6 +1172,10 @@ i {
 }
 button{
     cursor: pointer;
+}
+.submit-btn{
+    cursor: pointer;
+    background: #ffb70050;
 }
 .d-flex{
     color: #95855C !important;
@@ -1201,4 +1239,27 @@ button{
 }
 .exploring{
     background: #d68b12;
+}
+
+form{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    max-width: 600px;
+}
+input::placeholder,
+textarea::placeholder{
+    color: #f1f1f190;
+}
+input,textarea{
+    padding: 15px;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 16px;
+    background: #ffffff10;
+    border-radius: 8px;
+    border: 1px solid #f1f1f150;
+    color: #fff;
+    outline: none;
+    resize: none;
 }

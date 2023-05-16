@@ -179,6 +179,18 @@
 }
 
 @media only screen and (max-width: 1150px) {
+    .manifesto-text-container {
+            width: 100%;
+            margin: 20px 0;
+    
+        }
+    
+        .manifesto-text-container2 {
+            width: 100%;
+            text-align: center;
+    
+            margin: 20px 0;
+        }
     .card-container{
         flex-wrap: wrap;
     }
