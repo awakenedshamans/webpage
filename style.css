@@ -36,6 +36,7 @@ nav{
 .container-d{
     max-width: 1700px;
     margin: auto;
+    padding: 15px;
 }
 .bg-dark {
     background-color: #000000;
