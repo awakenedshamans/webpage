@@ -1,3 +1,41 @@
+const menuBtn = document.querySelector(".menu-btn");
+const navbarLinksM = document.querySelector(".nav-links");
+const navLinkContainer = document.querySelector(".nav-link-container");
+const downloadBtn = document.querySelector(".download-cv");
+const overlay = document.querySelector(".overlay");
+
+
+
+document.addEventListener("click", (e) => {
+    target = e.target.parentNode;
+
+    if (target === menuBtn) {
+        navbarLinksM.classList.toggle("active-nav")
+        overlay.style.display = "block";
+
+        setTimeout(() => {
+            navbarLinksM.classList.toggle("anim-navs")
+        }, 100);
+    }
+
+    if (target != menuBtn && target != navLinkContainer && target != downloadBtn && target != navbarLinksM) {
+        setTimeout(() => {
+            navbarLinksM.classList.remove("active-nav")
+        }, 100);
+        navbarLinksM.classList.remove("anim-navs")
+        overlay.style.display = "none";
+    }
+
+    if (e.target == overlay) {
+        setTimeout(() => {
+            navbarLinksM.classList.remove("active-nav")
+        }, 100);
+        navbarLinksM.classList.remove("anim-navs")
+        overlay.style.display = "none";
+
+    }
+});
+
 // Metamask bağlantı durumunu localStorage'da saklamak için anahtar
 const storageKey = 'metamaskConnected';
 
@@ -161,43 +199,7 @@ for (let i = 0; i < nthAll.length; i++) {
     })
 }
 
-const menuBtn = document.querySelector(".menu-btn");
-const navbarLinksM = document.querySelector(".nav-links");
-const navLinkContainer = document.querySelector(".nav-link-container");
-const downloadBtn = document.querySelector(".download-cv");
-const overlay = document.querySelector(".overlay");
 
-
-
-document.addEventListener("click", (e) => {
-    target = e.target.parentNode;
-
-    if (target === menuBtn) {
-        navbarLinksM.classList.toggle("active-nav")
-        overlay.style.display = "block";
-
-        setTimeout(() => {
-            navbarLinksM.classList.toggle("anim-navs")
-        }, 100);
-    }
-
-    if (target != menuBtn && target != navLinkContainer && target != downloadBtn && target != navbarLinksM) {
-        setTimeout(() => {
-            navbarLinksM.classList.remove("active-nav")
-        }, 100);
-        navbarLinksM.classList.remove("anim-navs")
-        overlay.style.display = "none";
-    }
-
-    if (e.target == overlay) {
-        setTimeout(() => {
-            navbarLinksM.classList.remove("active-nav")
-        }, 100);
-        navbarLinksM.classList.remove("anim-navs")
-        overlay.style.display = "none";
-
-    }
-});
 
 
 var swiper2 = new Swiper(".mySwiper2", {
