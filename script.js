@@ -101,7 +101,7 @@ async function openMetamask() {
         }
     } else {
         // Metamask bulunamazsa kullanıcıya bir hata mesajı göster
-        alert('Metamask uygulaması bulunamadı. Lütfen yükleyin ve giriş yapın.');
+        alert('Metamask application not found. Please install and log in.');
     }
 }
 
