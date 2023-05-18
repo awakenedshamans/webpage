@@ -3,7 +3,20 @@ const navbarLinksM = document.querySelector(".nav-links");
 const navLinkContainer = document.querySelector(".nav-link-container");
 const downloadBtn = document.querySelector(".download-cv");
 const overlay = document.querySelector(".overlay");
+const goldmodal = document.querySelector(".gold-modal");
+const modalcon = document.querySelector(".modal-container");
+const metamaskButtonForce = document.querySelector("#metamaskButton");
 
+
+window.addEventListener("click", (e)=>{
+    console.log(e.target);
+    if (e.target === metamaskButtonForce) {
+        goldmodal.style.display = "flex";
+    }
+    if (e.target === goldmodal) {
+        goldmodal.style.display = "none";
+    }
+})
 
 
 document.addEventListener("click", (e) => {
@@ -47,9 +60,11 @@ if (localStorage.getItem(storageKey) === 'true') {
             const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
             if (accounts.length > 0) {
                 showMetamaskInfo();
-                const metamaskButton = document.getElementById('metamaskButton');
+                const metamaskButton = document.getElementById('metamaskButtonr');
                 metamaskButton.innerHTML = "Disconnect"
+                metamaskButtonForce.innerHTML = "Disconnect"
                 metamaskButton.style.background = "#905F23"
+                metamaskButtonForce.style.background = "#905F23"
             }
         }
     });
@@ -65,9 +80,11 @@ async function openMetamask() {
         // Kullanıcının giriş yapması durumunda alınan hesap bilgilerini göster
         if (accounts.length > 0) {
             const address = accounts[0];
-            const metamaskButton = document.getElementById('metamaskButton');
+            const metamaskButton = document.getElementById('metamaskButtonr');
             metamaskButton.innerHTML = "Disconnect";
+            metamaskButtonForce.innerHTML = "Disconnect";
             metamaskButton.style.background = "#905F23";
+            metamaskButtonForce.style.background = "#905F23";
 
             // Hesap bakiyesini al
             const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -102,14 +119,16 @@ async function showMetamaskInfo() {
 
 // Metamask çıkış fonksiyonu
 function logoutMetamask() {
-    const metamaskButton = document.getElementById('metamaskButton');
-    metamaskButton.innerHTML = "Connect";
+    const metamaskButton = document.getElementById('metamaskButtonr');
+    metamaskButton.innerHTML = "METAMASK";
+    metamaskButtonForce.innerHTML = "Connect";
     metamaskButton.style.background = "";
+    metamaskButtonForce.style.background = "";
     localStorage.removeItem(storageKey);
 }
 
 // Metamask butonuna tıklanınca openMetamask fonksiyonunu çağır
-const metamaskButton = document.getElementById('metamaskButton');
+const metamaskButton = document.getElementById('metamaskButtonr');
 metamaskButton.addEventListener('click', function () {
     if (metamaskButton.innerHTML === "Disconnect") {
         logoutMetamask();
@@ -119,7 +138,7 @@ metamaskButton.addEventListener('click', function () {
 });
 
 setTimeout(() => {
-    if (metamaskButton.innerHTML === "Connect") {
+    if (metamaskButton.innerHTML === "METAMASK") {
         localStorage.removeItem(storageKey);
     }
 }, 1500);         

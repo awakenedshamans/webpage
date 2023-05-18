@@ -3,9 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Helvetica Neue', sans-serif;
-
-
-
 }
 
 html{
@@ -32,6 +29,63 @@ nav{
 .container-f{
     max-width: 1300px;
     margin: auto;
+}
+.gold-modal{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.505);
+    backdrop-filter: blur(3px);
+    z-index: 9999;
+    animation: opacity2 .3s ease 1;
+}
+@keyframes opacity2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 11px;
+    
+    width: 250px;
+    background: #DAB280;
+}
+.modal-container button{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 15px;
+    outline: none;
+    border: none;
+    margin: 5px;
+    color: #fff;
+    border-radius: 5px;
+    background: #7e541f;
+    box-shadow: 0 0 15px #00000010;
+    width: 100%;
+    text-transform: uppercase;
+}
+.disabl{
+    opacity: 0.3;
+    cursor: no-drop;
+}
+.modal-container span{
+    font-size: 28px;
+    padding: 10px;
+    font-weight: 800;
 }
 .container-d{
     max-width: 1700px;
